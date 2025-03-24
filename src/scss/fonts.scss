@@ -1,0 +1,20 @@
+$OpenSans: ('Regular': 400, 'Medium': 500, 'Bold': 700);
+$Audowide: ('Regular': 400);
+
+@each $name,
+$weight in $OpenSans {
+    @font-face {
+        font-family: 'OpenSans';
+        src: url('../assets/fonts/OpenSans_Condensed-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
+
+@each $name,
+$weight in $Audowide {
+    @font-face {
+        font-family: 'Audowide';
+        src: url('../assets/fonts/Audiowide-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
